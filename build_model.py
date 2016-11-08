@@ -25,6 +25,6 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 # Using Make Pipeline and Make Union
 log_reg_model = make_pipeline(CountVectorizer(), LogisticRegression())
 
-log_reg_model.fit(X_train, y_train)Tpu
+log_reg_model.fit(X_train, y_train)
 
 joblib.dump(log_reg_model, "spam_ham1.pkl")
